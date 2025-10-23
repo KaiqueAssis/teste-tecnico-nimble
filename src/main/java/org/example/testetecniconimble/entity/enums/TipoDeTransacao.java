@@ -1,0 +1,7 @@
+package org.example.testetecniconimble.entity.enums;
+
+public enum TipoDeTransacao {
+    ESTORNO,
+    DEPOSITO,
+    PAGAMENTO
+}
