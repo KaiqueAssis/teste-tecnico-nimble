@@ -76,8 +76,7 @@ public class CobrancaController {
                     @ApiResponse(responseCode = "500", description = "Erro interno no servidor")
             }
     )
-    public ResponseEntity<List<CobrancaDto>> listarCobrancasCriadasPeloUsuario(@RequestHeader("Authorization")
-                                                                               String tokenAutenticacao,
+    public ResponseEntity<List<CobrancaDto>> listarCobrancasCriadasPeloUsuario(
                                                                                @RequestParam("cpfUsuario")
                                                                                String  cpfUsuario,
                                                                                @RequestParam("status")
@@ -129,8 +128,7 @@ public class CobrancaController {
                     @ApiResponse(responseCode = "500", description = "Erro interno no servidor")
             }
     )
-    public ResponseEntity<List<CobrancaDto>> listarCobrancasRecebidas(@RequestHeader("Authorization")
-                                                                      String tokenAutenticacao,
+    public ResponseEntity<List<CobrancaDto>> listarCobrancasRecebidas(
                                                                       @RequestParam("cpfUsuario")
                                                                       String cpfUsuario,
                                                                       @RequestParam("status")

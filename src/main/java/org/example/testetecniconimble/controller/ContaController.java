@@ -58,7 +58,7 @@ public class ContaController {
             }
     )
     @GetMapping
-    public ResponseEntity<ContaDto> buscarContaPorCpf(@RequestHeader("Authorization") String tokenAutenticacao,
+    public ResponseEntity<ContaDto> buscarContaPorCpf(
                                                       @RequestParam("cpf") String cpf) throws ContaNaoEncontradaExceptional {
         return ResponseEntity.ok(contaService.buscarContaPorCpfUser(cpf));
     }

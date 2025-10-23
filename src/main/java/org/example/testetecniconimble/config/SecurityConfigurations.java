@@ -47,6 +47,7 @@ public class SecurityConfigurations {
                                 // Libera o endpoint de Login
                                 AntPathRequestMatcher.antMatcher("/login"),
 
+                                AntPathRequestMatcher.antMatcher("/usuario/cadastrar"),
 
                                 AntPathRequestMatcher.antMatcher("/swagger-ui/**"),
                                 AntPathRequestMatcher.antMatcher("/v3/api-docs/**")
